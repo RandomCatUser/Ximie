@@ -31,7 +31,17 @@ const server = createServer(async (req, res) => {
     }
 
     if (!isFile) {
-      // SPA fallback: client-side routes are served the app shell.
+      // Client-side routes must load from the app root so relative asset paths work.
+      if (
+        url.pathname !== '/' &&
+        !url.pathname.startsWith('/src/') &&
+        !url.pathname.startsWith('/assets/') &&
+        !url.pathname.includes('.')
+      ) {
+        res.writeHead(302, { Location: '/?route=' + encodeURIComponent(url.pathname + url.search) });
+        res.end();
+        return;
+      }
       file = join(root, 'index.html');
     }
 

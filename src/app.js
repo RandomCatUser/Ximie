@@ -922,6 +922,15 @@ function signIn(name) {
 
 window.addEventListener('popstate', render);
 
+// The local dev server redirects deep links to /?route=... so relative asset
+// paths resolve from the app root. Restore that route before rendering.
+try {
+  const routeParam = new URLSearchParams(location.search).get('route');
+  if (routeParam) sessionStorage.setItem('ximie-redirect', routeParam);
+} catch {
+  /* ignore */
+}
+
 // GitHub Pages has no server-side SPA fallback; 404.html stores the requested
 // path here so a deep link can be restored after it redirects to the app root.
 try {
