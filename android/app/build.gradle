@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.ximie.clone'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.ximie.clone'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('release.keystore')
+            storePassword 'android'
+            keyAlias 'ximie'
+            keyPassword 'android'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+        }
+    }
+}

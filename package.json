@@ -1,0 +1,11 @@
+{
+  "name": "ximie-clone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A local, self-contained clone of the Ximie learning app UI",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  }
+}

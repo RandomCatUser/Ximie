@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Ximie mascot reading a book">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="35%" r="75%">
+      <stop offset="0" stop-color="#f3f8d9"/>
+      <stop offset="1" stop-color="#bcd9a0"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4a3757"/>
+      <stop offset="1" stop-color="#2e2239"/>
+    </linearGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff6e2"/>
+      <stop offset="1" stop-color="#f1d9bb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="240" height="240" rx="52" fill="url(#bg)"/>
+  <g fill="#a7c987" opacity=".8">
+    <path d="M18 168 q14-30 24 0 q-12 8-24 0z"/>
+    <path d="M198 176 q16-34 28 0 q-14 10-28 0z"/>
+    <path d="M54 58 q10-22 18 0 q-9 7-18 0z"/>
+  </g>
+  <g>
+    <g fill="#fffaf0" stroke="#7d6a58" stroke-width="2.5">
+      <circle cx="34" cy="54" r="9"/><circle cx="48" cy="44" r="6"/><circle cx="50" cy="62" r="6"/>
+      <circle cx="204" cy="50" r="8"/><circle cx="217" cy="42" r="5"/><circle cx="216" cy="60" r="5"/>
+    </g>
+    <g fill="#f6c96b"><circle cx="34" cy="54" r="3.5"/><circle cx="204" cy="50" r="3"/></g>
+  </g>
+
+  <!-- body -->
+  <path d="M46 128 C46 78 78 50 120 48 C164 46 196 76 196 126 C196 158 180 180 154 190 L86 190 C58 180 46 158 46 128 Z"
+        fill="url(#body)" stroke="#241a2e" stroke-width="5"/>
+  <!-- ears -->
+  <path d="M62 78 q-14-30 12-30 q16 0 18 22z" fill="#3a2c46" stroke="#241a2e" stroke-width="4"/>
+  <path d="M178 78 q14-30-12-30 q-16 0-18 22z" fill="#3a2c46" stroke="#241a2e" stroke-width="4"/>
+  <!-- top tuft -->
+  <path d="M112 50 q4-24 20-22 q-2 14-10 22z" fill="#3a2c46" stroke="#241a2e" stroke-width="4"/>
+
+  <!-- eyes -->
+  <ellipse cx="88" cy="118" rx="27" ry="31" fill="#0d0b12"/>
+  <ellipse cx="152" cy="118" rx="27" ry="31" fill="#0d0b12"/>
+  <path d="M61 108 a27 31 0 0 1 54 0" fill="none" stroke="#bcd9f2" stroke-width="7" stroke-linecap="round"/>
+  <path d="M125 108 a27 31 0 0 1 54 0" fill="none" stroke="#bcd9f2" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="80" cy="108" r="5" fill="#eaf4ff" opacity=".85"/>
+  <circle cx="144" cy="108" r="5" fill="#eaf4ff" opacity=".85"/>
+
+  <!-- nose + smile -->
+  <ellipse cx="120" cy="146" rx="7" ry="5" fill="#17111f"/>
+  <path d="M108 156 q12 10 24 0" fill="none" stroke="#17111f" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- paws -->
+  <ellipse cx="72" cy="184" rx="16" ry="11" fill="#33273f" stroke="#241a2e" stroke-width="4"/>
+  <ellipse cx="168" cy="184" rx="16" ry="11" fill="#33273f" stroke="#241a2e" stroke-width="4"/>
+
+  <!-- open book -->
+  <path d="M44 188 q38-12 76 4 q38-16 76-4 l0 30 q-38-12-76 4 q-38-16-76-4z" fill="#7b4c9a" stroke="#3a2447" stroke-width="4"/>
+  <path d="M50 186 q36-10 70 4 l0 26 q-34-14-70-4z" fill="url(#page)" stroke="#7a5c46" stroke-width="2"/>
+  <path d="M190 186 q-36-10-70 4 l0 26 q34-14 70-4z" fill="url(#page)" stroke="#7a5c46" stroke-width="2"/>
+  <g stroke="#b58f6a" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <path d="M62 194 q20-4 44 4"/><path d="M62 202 q20-4 44 4"/><path d="M62 210 q20-4 44 4"/>
+    <path d="M178 194 q-20-4-44 4"/><path d="M178 202 q-20-4-44 4"/><path d="M178 210 q-20-4-44 4"/>
+  </g>
+</svg>

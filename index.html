@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      // GitHub Pages project sites serve under /<repo>/; local dev uses /.
+      (function () {
+        var el = document.createElement('base');
+        el.href = location.hostname.endsWith('github.io') ? '/Ximie/' : '/';
+        document.head.appendChild(el);
+      })();
+    </script>
+    <meta name="theme-color" content="#58cc02" />
+    <meta
+      name="description"
+      content="Bite-sized, playful lessons that teach you to build the web. Earn XP, keep a streak and code in your browser."
+    />
+    <title>Ximie — learn HTML, CSS &amp; JavaScript for free</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ximie — redirecting</title>
+  </head>
+  <body>
+    <script>
+      // GitHub Pages serves this file for client-side routes such as /lesson/html-1-1.
+      // Remember the requested route, then return to the app shell so index.html can
+      // restore it with history.replaceState.
+      (function () {
+        var base = location.hostname.endsWith('github.io') ? '/Ximie' : '';
+        try {
+          sessionStorage.setItem('ximie-redirect', location.pathname + location.search);
+        } catch (e) {}
+        location.replace(base + '/');
+      })();
+    </script>
+  </body>
+</html>
