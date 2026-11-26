@@ -13,7 +13,7 @@ Then open <http://localhost:3000>. No dependencies or build step are required (N
 ## Web app and Android APK
 
 - The web app is deployed to GitHub Pages at <https://randomcatuser.github.io/Ximie/> by `.github/workflows/deploy.yml` on every push to `main`.
-- `.github/workflows/android.yml` builds a signed WebView APK with Gradle and Android SDK on the runner. Trigger it manually from the Actions tab, or push a `v*` tag to build and attach the APK to a GitHub release.
+- `.github/workflows/android.yml` builds a signed WebView APK with Gradle and Android SDK on the runner. Trigger it manually from the Actions tab, or push a `v*` tag to build and attach the APK to a GitHub release. The `v1.0.0` APK is at <https://github.com/RandomCatUser/Ximie/releases/tag/v1.0.0>.
 - The APK is a thin WebView pointed at the Pages URL above, so it always loads the latest published web app. It needs an internet connection.
 - GitHub Pages has no server-side routing; `404.html` preserves deep links such as `/lesson/html-1-1` and restores them in the app.
 
